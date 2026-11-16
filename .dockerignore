@@ -1,0 +1,16 @@
+.git
+.github
+.gitignore
+.dockerignore
+**/node_modules
+web/dist
+web/public/pdfjs
+web/coverage
+web/test-results
+web/playwright-report
+server/target
+data
+*.pdf
+*.md
+!content/**/*.md
+docker-compose*.yml
