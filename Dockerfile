@@ -16,7 +16,9 @@ COPY server/Cargo.toml server/Cargo.lock ./
 # cache the dependencies in their own layer
 RUN mkdir src && echo 'fn main() {}' > src/main.rs && cargo build --release --locked && rm -rf src target/release/deps/gatita* target/release/gatita
 COPY server/src ./src
-RUN cargo build --release --locked && strip target/release/gatita
+# touch: make cargo rebuild the real sources (not the placeholder above). The real binary answers "healthcheck"
+# with exit code 1 when no server runs, the placeholder with 0: this catches a stale build.
+RUN touch src/main.rs && cargo build --release --locked && strip target/release/gatita && ./target/release/gatita healthcheck; test $? -eq 1
 
 # ---- 3. runtime: the binary, the built app and the course content. Nothing else. ----
 FROM alpine:3.22
