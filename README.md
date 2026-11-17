@@ -7,7 +7,7 @@ une petite musique.
 
 - Matière → cours → chapitre → leçons ou exercices, ou **exercices au hasard** (chapitre, cours, matière ou tout).
 - Chaque explication, exercice et correction a un lien 📖 vers l’endroit exact du cours.
-- Contenu actuel : *Système d’information de gestion (UE 118), cours 1*, partie **SQL** pour débutant
+- Contenu actuel : *Système d’information de gestion, cours 1*, partie **SQL** pour débutant
   (chapitres 3, 4 et 5) : 29 leçons, 363 exercices dont 219 requêtes SQL.
 - Installable sur Android comme une application (PWA), fonctionne hors ligne, progression enregistrée sur le NAS.
 
@@ -63,6 +63,6 @@ Chaque push sur la branche par défaut qui passe les tests publie une release et
 
 ## Droits
 
-Le PDF et le contenu du cours appartiennent à leurs auteurs (Cnam-Intec) : le PDF n’est **jamais** dans ce dépôt ni
+Le PDF et le contenu du cours appartiennent à leurs auteurs : le PDF n’est **jamais** dans ce dépôt ni
 dans l’image, il reste dans le dossier `data/` du NAS. Les leçons de `content/` sont des reformulations courtes qui
 renvoient au cours.

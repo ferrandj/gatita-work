@@ -17,7 +17,7 @@ ref: 77 | Chap. 4 · I. Les requêtes : syntaxe de base | raisonnement en trois 
 
 Toute requête se construit en trois temps :
 
-1. **Exprimer le besoin** : « Quels sont les professeurs de l’Intec qui habitent hors de Paris ? »
+1. **Exprimer le besoin** : « Quels sont les professeurs de l’école qui habitent hors de Paris ? »
 2. **L’écrire en SQL** :
 ```sql
 SELECT NomProf, PrenomProf, Ville

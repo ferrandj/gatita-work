@@ -17,7 +17,7 @@ Pour une requête complexe, le cours propose d’avancer par étapes :
 
 Et l’ordre d’écriture : **SELECT → FROM → (JOIN … ON) → WHERE → GROUP BY → HAVING → ORDER BY**.
 
-> En DCG/DGC, pas d’aide-mémoire SQL à l’examen : il faut connaître la syntaxe par cœur.
+> À l’examen, pas d’aide-mémoire SQL : il faut connaître la syntaxe par cœur.
 :::
 
 ::: ordre si-c1-ch4-e57
@@ -37,17 +37,17 @@ SELECT → FROM → WHERE → GROUP BY → HAVING (juste après le GROUP BY) →
 :::
 
 ::: qcm si-c1-ch4-e58
-ref: 91 | Chap. 4 · II. G. Récapitulatif | mais pas en DCG/DGC
+ref: 91 | Chap. 4 · II. G. Récapitulatif | Dans de nombreux examens
 niveau: 1
 == question
-L’épreuve de SQL en DCG/DGC est considérée comme difficile parce que…
+À l’examen, l’épreuve de SQL est considérée comme difficile parce que…
 == choix
 - [ ] Il faut écrire les requêtes sur ordinateur
 - [x] L’élève ne dispose pas d’aide-mémoire sur la syntaxe SQL
 - [ ] Il faut connaître Oracle
 - [ ] Les requêtes sont en anglais
 == explication
-Dans de nombreux examens l’élève a un aide-mémoire, **mais pas en DCG/DGC** : il faut avoir intériorisé la syntaxe.
+Dans de nombreux examens l’élève a un aide-mémoire, **mais pas à cet examen** : il faut avoir intériorisé la syntaxe.
 :::
 
 ::: cours Un exemple complet, étape par étape
