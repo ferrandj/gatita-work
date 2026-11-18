@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#DB2777"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDBA74"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="96" cy="104" r="10" fill="#fff" opacity=".5"/>
+  <circle cx="420" cy="88" r="7" fill="#fff" opacity=".45"/>
+  <path d="M430 150l6 14 14 6-14 6-6 14-6-14-14-6 14-6z" fill="#FDE68A"/>
+  <!-- tail -->
+  <path d="M372 400c58-6 82-52 62-92" fill="none" stroke="#F59E0B" stroke-width="26" stroke-linecap="round"/>
+  <!-- body -->
+  <ellipse cx="256" cy="372" rx="128" ry="104" fill="url(#fur)"/>
+  <!-- ears -->
+  <path d="M150 186 L142 70 L236 132 Z" fill="#F59E0B" stroke="#F59E0B" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M362 186 L370 70 L276 132 Z" fill="#F59E0B" stroke="#F59E0B" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M164 160 L160 98 L214 134 Z" fill="#FBCFE8"/>
+  <path d="M348 160 L352 98 L298 134 Z" fill="#FBCFE8"/>
+  <!-- head -->
+  <ellipse cx="256" cy="206" rx="124" ry="104" fill="url(#fur)"/>
+  <!-- stripes -->
+  <path d="M256 108v30M228 112l6 26M284 112l-6 26" stroke="#D97706" stroke-width="9" stroke-linecap="round"/>
+  <!-- reading glasses -->
+  <g fill="#fff" fill-opacity=".35" stroke="#3B0764" stroke-width="7">
+    <circle cx="208" cy="212" r="32"/>
+    <circle cx="304" cy="212" r="32"/>
+  </g>
+  <path d="M240 210q16-10 32 0" fill="none" stroke="#3B0764" stroke-width="7" stroke-linecap="round"/>
+  <!-- eyes looking down at the book -->
+  <ellipse cx="208" cy="220" rx="11" ry="13" fill="#3B0764"/>
+  <ellipse cx="304" cy="220" rx="11" ry="13" fill="#3B0764"/>
+  <circle cx="212" cy="215" r="4" fill="#fff"/>
+  <circle cx="308" cy="215" r="4" fill="#fff"/>
+  <!-- cheeks, nose, mouth -->
+  <ellipse cx="160" cy="250" rx="18" ry="11" fill="#F472B6" opacity=".55"/>
+  <ellipse cx="352" cy="250" rx="18" ry="11" fill="#F472B6" opacity=".55"/>
+  <path d="M246 248h20l-10 11z" fill="#DB2777" stroke="#DB2777" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M256 259q-6 14-20 10M256 259q6 14 20 10" fill="none" stroke="#3B0764" stroke-width="5" stroke-linecap="round"/>
+  <!-- whiskers -->
+  <path d="M138 240l-50-8M140 256l-48 6M374 240l50-8M372 256l48 6" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <!-- open book -->
+  <path d="M74 318 Q166 296 256 330 Q346 296 438 318 L438 452 Q346 430 256 462 Q166 430 74 452 Z" fill="#0E7490"/>
+  <path d="M88 312 Q170 292 252 324 L252 446 Q170 418 88 438 Z" fill="#FFFBEB"/>
+  <path d="M424 312 Q342 292 260 324 L260 446 Q342 418 424 438 Z" fill="#FFFBEB"/>
+  <path d="M256 326 L256 462" stroke="#0E7490" stroke-width="6"/>
+  <g fill="none" stroke="#C4B5FD" stroke-width="7" stroke-linecap="round">
+    <path d="M112 346 Q170 334 228 354M112 372 Q170 360 228 380M112 398 Q160 388 204 404"/>
+    <path d="M284 354 Q342 334 400 346M284 380 Q342 360 400 372M308 404 Q352 388 400 398"/>
+  </g>
+  <path d="M376 312 v52 l12 -10 12 10 v-55" fill="#DB2777"/>
+  <!-- paws on the book -->
+  <ellipse cx="170" cy="318" rx="32" ry="20" fill="#FDBA74" stroke="#F59E0B" stroke-width="5"/>
+  <ellipse cx="342" cy="318" rx="32" ry="20" fill="#FDBA74" stroke="#F59E0B" stroke-width="5"/>
+  <path d="M160 310v10M172 308v12M184 310v10M332 310v10M344 308v12M356 310v10" stroke="#D97706" stroke-width="4" stroke-linecap="round"/>
+</svg>

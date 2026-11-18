@@ -1,0 +1,40 @@
+# Gatita: ready to deploy. No secrets are needed.
+#
+# Synology (Container Manager): create the folder /volume1/docker/gatita/data first, then
+# Container Manager -> Project -> Create -> paste this file (or use "docker compose up -d" over SSH).
+#
+# Then open the app once and send the PDF of each course (Réglages -> PDF des cours): it is stored in data/pdf/.
+# Your progress, its automatic backups and the PDFs live in the data folder; updating or re-creating the container never touches it.
+services:
+  gatita:
+    # The image is built and published by GitHub: there is NOTHING to build on the NAS (no "build:" line on purpose,
+    # it would make Compose look for a Dockerfile in this folder instead of pulling the image).
+    image: ghcr.io/ferrandj/gatita-work:latest
+    # :latest = newest release, :1 = only 1.x releases, :1.0.0 = pinned to one release.
+    # To update: docker compose pull && docker compose up -d   (or let Watchtower do it, see the label below)
+    container_name: gatita
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      # <port on the NAS>:<port in the container, keep 8080>  ->  http://<nas-address>:10458
+      - "10458:8080"
+    volumes:
+      # EVERYTHING you create lives in this folder: progress (state.json), backups/, the course PDFs (pdf/),
+      # and optional extra lessons/exercises (content/, same format as the content/ folder of the repository).
+      # Include it in your NAS backup (Hyper Backup, rsync, ...).
+      - /volume1/docker/gatita/data:/data
+    labels:
+      # Lets Watchtower (if you run it) update this container automatically when a new release is published.
+      - com.centurylinklabs.watchtower.enable=true
+
+    # --- Only if needed -------------------------------------------------------------------------
+    # Permissions need no setup: the container runs as whoever owns the data folder (and hands a folder that
+    # Docker created as root to an unprivileged user). Set "user:" only to force one on purpose; then that user
+    # must be able to write to the folder.
+    # user: "UID:GID"
+    #
+    # Optional password for the whole app (otherwise protect it with your reverse proxy / VPN):
+    # environment:
+    #   AUTH_USER: "<choose-a-user>"
+    #   AUTH_PASSWORD: "<choose-a-password>"
